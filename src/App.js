@@ -76,45 +76,106 @@ function App() {
       </section>
 
      {/* Skills Section */}
+{/* Skills Section */}
 <section id="skills" className="p-8 bg-gray-900">
   <h2 className="text-3xl font-bold text-center mb-6">Skills</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-700 transition"
+    >
+      <img
+        src="javascript-logo.png" // Replace with the actual path to the JavaScript logo
+        alt="JavaScript Logo"
+        className="w-16 h-16 mb-4"
+      />
       <h3 className="text-xl font-semibold">JavaScript</h3>
-      <p className="text-gray-400">Experienced with modern JavaScript, asynchronous programming, and ES6+ features. Comfortable using JavaScript for both client-side and server-side development.</p>
-    </div>
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <p className="text-gray-400 text-center">
+        Experienced with modern JavaScript, ES6+, and asynchronous programming.
+      </p>
+    </a>
+    <a
+      href="https://www.python.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-700 transition"
+    >
+      <img
+        src="python-logo.png" // Replace with the actual path to the Python logo
+        alt="Python Logo"
+        className="w-16 h-16 mb-4"
+      />
       <h3 className="text-xl font-semibold">Python</h3>
-      <p className="text-gray-400">Proficient in Python for web development, automation scripts, and machine learning. Familiar with libraries like Flask, Django, Pandas, and TensorFlow.</p>
-    </div>
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <p className="text-gray-400 text-center">
+        Proficient in Python for web development, automation, and machine learning.
+      </p>
+    </a>
+    <a
+      href="https://isocpp.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-700 transition"
+    >
+      <img
+        src="cpp-logo.png" // Replace with the actual path to the C++ logo
+        alt="C++ Logo"
+        className="w-16 h-16 mb-4"
+      />
       <h3 className="text-xl font-semibold">C++</h3>
-      <p className="text-gray-400">Skilled in C++ for system-level programming, data structures, algorithms, and performance optimization. Experienced in building efficient software with low-level memory management.</p>
-    </div>
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <p className="text-gray-400 text-center">
+        Skilled in C++ for algorithms, system-level programming, and optimizations.
+      </p>
+    </a>
+    <a
+      href="https://reactjs.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-700 transition"
+    >
+      <img
+        src="react-logo.png" // Replace with the actual path to the React logo
+        alt="React Logo"
+        className="w-16 h-16 mb-4"
+      />
       <h3 className="text-xl font-semibold">React</h3>
-      <p className="text-gray-400">Proficient in building dynamic and responsive web applications with React, including state management with Redux and hooks, and creating reusable UI components.</p>
-    </div>
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <p className="text-gray-400 text-center">
+        Proficient in building dynamic and responsive web applications with React.
+      </p>
+    </a>
+    <a
+      href="https://nodejs.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-700 transition"
+    >
+      <img
+        src="nodejs-logo.png" // Replace with the actual path to the Node.js logo
+        alt="Node.js Logo"
+        className="w-16 h-16 mb-4"
+      />
       <h3 className="text-xl font-semibold">Node.js</h3>
-      <p className="text-gray-400">Experienced in server-side development using Node.js, building RESTful APIs, and integrating with databases like MongoDB and SQL databases.</p>
-    </div>
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <p className="text-gray-400 text-center">
+        Experienced in server-side development using Node.js and building APIs.
+      </p>
+    </a>
+    <a
+      href="https://www.mysql.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center hover:bg-gray-700 transition"
+    >
+      <img
+        src="sql-logo.png" // Replace with the actual path to the SQL logo
+        alt="SQL Logo"
+        className="w-16 h-16 mb-4"
+      />
       <h3 className="text-xl font-semibold">SQL</h3>
-      <p className="text-gray-400">Strong command of SQL, including complex queries, database design, normalization, and optimization. Familiar with MySQL, PostgreSQL, and SQLite.</p>
-    </div>
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-      <h3 className="text-xl font-semibold">Git</h3>
-      <p className="text-gray-400">Experienced with Git version control, working with GitHub, GitLab, and Bitbucket for team collaboration, branching, merging, and code reviews.</p>
-    </div>
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-      <h3 className="text-xl font-semibold">Docker</h3>
-      <p className="text-gray-400">Familiar with Docker for containerization, building and deploying applications in isolated environments for consistency across development, testing, and production stages.</p>
-    </div>
-    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-      <h3 className="text-xl font-semibold">Machine Learning</h3>
-      <p className="text-gray-400">Experienced in applying machine learning algorithms using Python and libraries like Scikit-learn, TensorFlow, and Keras for classification, regression, and clustering tasks.</p>
-    </div>
+      <p className="text-gray-400 text-center">
+        Strong in database design, complex queries, and SQL optimization.
+      </p>
+    </a>
   </div>
 </section>
 
