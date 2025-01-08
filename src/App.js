@@ -200,18 +200,16 @@ function App() {
       </section>
 
        {/* Resume Section */}
-       <section id="resume" className="p-8 bg-gray-900">
-        <h2 className="text-3xl font-bold text-center mb-6">Download My Resume</h2>
-        <div className="flex justify-center">
-          <a
-            href="/Aaron Fernandes Resume.pdf" // Ensure the resume PDF is placed in the public folder
-            download="Aaron_Fernandes_Resume.pdf"
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-500 transition"
-          >
-            Download Resume
-          </a>
-        </div>
-      </section>
+       <section id="resume" className="p-8 bg-gray-900 text-center">
+  <h2 className="text-3xl font-bold text-center mb-6">Download My Resume</h2>
+  <a
+    href="/aaron-fernandes-resume.pdf" // Correct relative path
+    download="Aaron-Fernandes-Resume.pdf" // Forces download with a custom filename
+    className="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition"
+  >
+    Download Resume
+  </a>
+</section>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-center py-4 mt-8">
