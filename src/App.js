@@ -203,8 +203,8 @@ function App() {
        <section id="resume" className="p-8 bg-gray-900 text-center">
   <h2 className="text-3xl font-bold text-center mb-6">Download My Resume</h2>
   <a
-    href="/aaron-fernandes-resume.pdf" // Correct relative path
-    download="Aaron-Fernandes-Resume.pdf" // Forces download with a custom filename
+    href="/Resume.pdf" // Correct relative path
+    download="Resume.pdf" // Forces download with a custom filename
     className="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition"
   >
     Download Resume
