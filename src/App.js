@@ -151,28 +151,62 @@ function App() {
 
 
 
+{/* Projects Section */}
+<section id="projects" className="p-8 bg-gray-900">
+  <h2 className="text-3xl font-bold text-center mb-6 text-white">Projects</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {/* Project 1 */}
+    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <img src="/images/project-banner.png" alt="Project 1" className="w-full h-40 object-cover rounded mb-4" />
+      <h3 className="text-xl font-semibold text-white">PROMED</h3>
+      <p className="text-gray-400 mb-4">PROMED is a web application designed to retrieve information about medicines using QR codes and NFC tags. The system allows users to add, view, and track medicine details, including expiry and manufacturing dates.</p>
+      <a 
+        href="https://github.com/aaronfernandes21/PROMED" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-teal-400 text-white px-5 py-3 rounded-full font-medium shadow-lg hover:from-teal-400 hover:to-blue-500 transition-transform transform hover:scale-105"
+      >
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          strokeWidth={2} 
+          stroke="currentColor" 
+          className="w-5 h-5"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25c0 1.8.9 3.75 2.25 3.75H9m4.5-12L19.5 9m0 0l-6 6M19.5 9H9" />
+        </svg>
+        View Repository
+      </a>
+    </div>
 
-      {/* Projects Section */}
-      <section id="projects" className="p-8 bg-gray-900">
-        <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-            <img src="project1.jpg" alt="Project 1" className="w-full h-40 object-cover rounded mb-4" />
-            <h3 className="text-xl font-semibold">Project 1</h3>
-            <p className="text-gray-400">A brief description of your project and its impact.</p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-            <img src="project2.jpg" alt="Project 2" className="w-full h-40 object-cover rounded mb-4" />
-            <h3 className="text-xl font-semibold">Project 2</h3>
-            <p className="text-gray-400">A brief description of your project and its impact.</p>
-          </div>
-          <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
-            <img src="project3.jpg" alt="Project 3" className="w-full h-40 object-cover rounded mb-4" />
-            <h3 className="text-xl font-semibold">Project 3</h3>
-            <p className="text-gray-400">A brief description of your project and its impact.</p>
-          </div>
-        </div>
-      </section>
+    {/* Project 2 */}
+    <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
+      <img src="/images/Designer.jpeg" alt="Project 2" className="w-full h-40 object-cover rounded mb-4" />
+      <h3 className="text-xl font-semibold text-white">Personal Expense Tracker API</h3>
+      <p className="text-gray-400 mb-4">A simple Node.js app for managing personal expenses: log new expenses, retrieve them by category or date, and analyze spending patterns. Features include spending analysis and daily/weekly/monthly summaries via cron jobs.</p>
+      <a 
+        href="https://github.com/aaronfernandes21/Personal-Expense-Tracker" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-teal-400 text-white px-5 py-3 rounded-full font-medium shadow-lg hover:from-teal-400 hover:to-blue-500 transition-transform transform hover:scale-105"
+      >
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          strokeWidth={2} 
+          stroke="currentColor" 
+          className="w-5 h-5"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25c0 1.8.9 3.75 2.25 3.75H9m4.5-12L19.5 9m0 0l-6 6M19.5 9H9" />
+        </svg>
+        View Repository
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer Section */}
       <footer className="bg-gray-800 text-white text-center py-6">
