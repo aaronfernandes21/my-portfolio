@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+Here’s a suggested README file template for your project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Portfolio Website
 
-In the project directory, you can run:
+Welcome to the portfolio of **Aaron Fernandes**, showcasing my work, skills, and projects.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Design**: The portfolio is fully responsive and works seamlessly on both desktop and mobile devices.
+- **Interactive Navbar**: The navigation bar allows users to smoothly navigate through the sections like About Me, Education, Skills, Projects, Organization, and Other Interests.
+- **Downloadable Resume**: Users can download my resume in PDF format from the navigation bar.
+- **Skills & Projects**: Various technologies and projects I’ve worked on are highlighted, including programming languages, web technologies, and tools.
+- **GitHub & LinkedIn Links**: Easy access to my GitHub and LinkedIn profiles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Sections
 
-### `npm test`
+### 1. **About Me**
+   - Introduces myself with a brief description.
+   - Profile picture and contact information (email) with social media links (GitHub and LinkedIn).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. **Education**
+   - Details of my Bachelor’s degree in Computer Science and Engineering at Sahyadri College of Engineering and Management.
 
-### `npm run build`
+### 3. **Skills**
+   - Display of my skills in various programming languages, web technologies, and additional tools I use for development.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. **Projects**
+   - **PROMED**: A web application designed to retrieve medicine details using QR codes and NFC tags.
+   - **Personal Expense Tracker API**: A Node.js app for managing personal expenses with detailed analysis features.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. **Organization**
+   - Details of my involvement in **Sahyadri Open Source Community (SOSC)** as a **Design Lead**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 6. **Other Interests**
+   - Highlights of my interests beyond development, such as UI/UX Design.
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React.js**: Frontend framework for building the interactive UI.
+- **Tailwind CSS**: Utility-first CSS framework for responsive design.
+- **HTML/CSS/JavaScript**: Standard web technologies.
+- **Node.js**: Backend for server-side tasks in some projects.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aaronfernandes21/my-portfolio
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate into the project folder:
+   ```bash
+   cd portfolio
+   ```
 
-## Learn More
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Run the application:
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to reach out to me at: [aaronfernandescks2015@gmail.com](mailto:aaronfernandescks2015@gmail.com).
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

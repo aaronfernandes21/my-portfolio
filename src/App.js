@@ -1,21 +1,36 @@
-import React from 'react';
-import './App.css'; // Tailwind CSS
+import React, { useState } from 'react';
+import './App.css'; 
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="font-sans bg-gray-900 text-white">
-      {/* Header Section */}
-      <header className="bg-gray-800 text-white p-8 flex justify-between items-center">
-        <h1 className="text-4xl font-extrabold">Welcome to My Portfolio</h1>
-        <nav className="flex space-x-6 items-center">
+      
+      <header className="bg-gray-800 text-white p-6 sm:p-8 flex flex-col sm:flex-row justify-between items-center">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-center sm:text-left mb-4 sm:mb-0">
+          Welcome to My Portfolio
+        </h1>
+
+      
+        <button onClick={toggleMenu} className="sm:hidden text-2xl">
+          {menuOpen ? '×' : '≡'}
+        </button>
+
+       
+        <nav className={`sm:flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center ${menuOpen ? 'block' : 'hidden'} sm:block`}>
           <a href="#about" className="hover:underline">About Me</a>
           <a href="#education" className="hover:underline">Education</a>
-          <a href="#projects" className="hover:underline">Projects</a>
+          
           <a href="#skills" className="hover:underline">Skills</a>
-          <a href="#frameworks" className="hover:underline">Frameworks</a>
+          <a href="#projects" className="hover:underline">Projects</a>
           <a
-            href="/Resume.pdf" // Correct relative path
-            download="Resume.pdf" // Forces download with a custom filename
+            href="/Resume.pdf"
+            download="Resume.pdf"
             className="hover:underline bg-transparent border border-white rounded-lg px-4 py-1"
           >
             Download Resume
@@ -23,13 +38,14 @@ function App() {
         </nav>
       </header>
 
-      {/* About Me Section */}
+
+  
       <section id="about" className="p-8 bg-gray-800">
         <h2 className="text-3xl font-bold text-center mb-6">Heyya! it's me, Aaron Fernandes</h2>
         <div className="flex justify-center mb-6">
-          {/* Your Round Image */}
+       
           <img 
-            src="/images/aaron_profilepic.jpg"  // Replace with your image path
+            src="/images/aaron_profilepic.jpg"  
             alt="Aaron Fernandes"
             className="w-32 h-32 object-cover rounded-full border-4 border-gray-400"
           />
@@ -37,7 +53,7 @@ function App() {
         <p className="max-w-2xl mx-auto text-center text-gray-400">
           Hi there! I'm a developer who loves building software that makes a difference. Whether it's solving real-world problems or creating something meaningful, I’m always up for a challenge.
         </p>
-        {/* Links to GitHub and LinkedIn */}
+      
         <div className="flex justify-center mt-6 space-x-6">
           <a href="https://github.com/aaronfernandes21" target="_blank" rel="noopener noreferrer" className="bg-white p-2 rounded shadow-lg">
             <img src="/images/github.png" alt="GitHub" className="w-8 h-8" />
@@ -53,12 +69,11 @@ function App() {
         </div>
       </section>
 
-     {/* Education Section */}
 <section id="education" className="p-8 mt-12 border-t-4 border-gray-500 shadow-lg bg-gray-800">
   <h2 className="text-3xl font-bold text-center mb-6 text-white">Education</h2>
   <div className="flex justify-center items-center">
     <div className="flex items-center space-x-6">
-      {/* Image Section */}
+   
       <a href="https://www.sahyadri.edu.in/" target="_blank" rel="noopener noreferrer">
         <img 
           src="/images/college.png" 
@@ -66,7 +81,7 @@ function App() {
           className="w-32 h-32 object-cover rounded-full mb-4" 
         />
       </a>
-      {/* Text Section */}
+    
       <div className="text-center">
         <p className="text-xl font-semibold text-white">Bachelor's Degree in Computer Science and Engineering</p>
         <p className="text-gray-400">Sahyadri College of Engineering and Management  2022-26</p>
@@ -76,12 +91,12 @@ function App() {
 </section>
 
 
-{/* Skills Section */}
+
 <section id="skills" className="p-8 bg-gray-900">
   <h2 className="text-4xl font-extrabold text-center text-white mb-8 drop-shadow-md">Skills</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     
-    {/* Programming Languages */}
+   
     <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300 ease-in-out">
       <h3 className="text-xl font-semibold text-white mb-4">Programming Languages</h3>
       <div className="flex flex-wrap justify-center gap-4">
@@ -97,7 +112,7 @@ function App() {
       </div>
     </div>
 
-    {/* Web Technologies */}
+  
     <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300 ease-in-out">
       <h3 className="text-xl font-semibold text-white mb-4">Web Technologies</h3>
       <div className="flex flex-wrap justify-center gap-4">
@@ -119,7 +134,6 @@ function App() {
       </div>
     </div>
 
-    {/* Additional Tools */}
     <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300 ease-in-out">
       <h3 className="text-xl font-semibold text-white mb-4">Additional Tools</h3>
       <div className="flex flex-wrap justify-center gap-4">
@@ -151,11 +165,11 @@ function App() {
 
 
 
-{/* Projects Section */}
+
 <section id="projects" className="p-8 bg-gray-900">
   <h2 className="text-3xl font-bold text-center mb-6 text-white">Projects</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {/* Project 1 */}
+   
     <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
       <img src="/images/project-banner.png" alt="Project 1" className="w-full h-40 object-cover rounded mb-4" />
       <h3 className="text-xl font-semibold text-white">PROMED</h3>
@@ -180,7 +194,7 @@ function App() {
       </a>
     </div>
 
-    {/* Project 2 */}
+
     <div className="bg-gray-800 p-4 rounded-lg shadow-lg">
       <img src="/images/Designer.jpeg" alt="Project 2" className="w-full h-40 object-cover rounded mb-4" />
       <h3 className="text-xl font-semibold text-white">Personal Expense Tracker API</h3>
@@ -207,8 +221,40 @@ function App() {
   </div>
 </section>
 
+<section id="organization" className="p-8 bg-gray-800">
+  <h2 className="text-3xl font-bold text-center mb-6 text-white">Organization</h2>
+  <div className="flex justify-center items-center">
+    <a href="https://www.sosc.org.in/" target="_blank" rel="noopener noreferrer">
+      <div className="flex items-center space-x-6">
+        <img src="/images/Group 1906.png" alt="SOSC" className="w-32 h-32 object-cover rounded-full mb-4" />
+        <div className="text-center">
+          <p className="text-xl font-semibold text-white">Sahyadri Open Source Community</p>
+          <p className="text-gray-400">Design Lead</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
 
-      {/* Footer Section */}
+
+<section id="interests" className="p-8 bg-gray-900">
+  <h2 className="text-3xl font-bold text-center mb-6 text-white">Other Interests</h2>
+  <div className="flex justify-center gap-6">
+    <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300 ease-in-out w-1/3">
+      <h3 className="text-xl font-semibold text-white mb-4">UI/UX Design</h3>
+    </div>
+    <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300 ease-in-out w-1/3">
+      <h3 className="text-xl font-semibold text-white mb-4">Music</h3>
+    </div>
+    <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300 ease-in-out w-1/3">
+      <h3 className="text-xl font-semibold text-white mb-4">Videography</h3>
+      <p className="text-gray-400 mt-2">Check out my work on <a href="https://www.instagram.com/local_lens_films?igsh=MTFoN3JrZ3Ixd3Bjcw==" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Instagram - Local Lens Films</a>.</p>
+    </div>
+  </div>
+</section>
+
+
+    
       <footer className="bg-gray-800 text-white text-center py-6">
         <p>© 2025 Aaron Fernandes. All Rights Reserved.</p>
       </footer>
