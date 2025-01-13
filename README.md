@@ -1,4 +1,4 @@
-Here’s a suggested README file template for your project:
+
 
 ---
 
